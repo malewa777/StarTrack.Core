@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/StatTrack.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbarbrand">
+        <div class="container">
+            <img alt="Brand" class="img-responsive" src="https://f.nodacdn.net/432376" width=" 200" height="80">
+            <buttom class="navbar-toggler" type="buttom" data-toggle="collapse" data-target="navbarContent"
+            aria-controls="navbarContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </buttom>
+        <div class="navbar navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto mb-2">
+                <li class="nav-item">
+                        <h5><a href="/" class="nav-link aheader">Главная</a></h5>
+                </li>
+                <li class="nav-item">
+                        <a href="/About" class="nav-link aheader">О компании</a>
+                </li>
+                <li class="nav-item">
+                        <a href="/Brand" class="nav-link aheader">Бренды</a>
+                </li>
+                    <li class="nav-item">
+                        <a href="/Roznica" class="nav-link aheader">Розница</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Sto" class="nav-link aheader">СТО</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Contacts" class="nav-link aheader">Контакты</a>
+                    </li>
+            </ul>
+            <div class="d-flex">
+                    <a href="/Login" class="shine-button">Login</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <main>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner my-5">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://f.nodacdn.net/444813" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="https://f.nodacdn.net/444158" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="https://f.nodacdn.net/496111" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+        <div class="container-fluid px-0 my-5 text-light">
+            <div style="background: url() no-repeat center center; background-size: cover;" class="row no-gutters justify-content-center overflow_hidden">
+            <div class="col-xl-6 order-2">
+                    <div class="text-light position-relative py-6 px-7">
+                    <div class="row my-%head_my% justify-content-center text-center">
+                        <div class="col-12">
+                            <h1 class="display-4 text-uppercase %bg_color_1% text-light">О нас</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-12 col-md my-sm-3 text-light">
+                        <div style="max-width: 255px" class="mx-auto w-sm-max75">
+                                <div class="row">
+                                    <div class="col text-left">
+                                    <p class="h4">Грузовые запчасти</p>
+                                    <p class="mt-4 mb-2 border-bottom border-success"></p>
+                                </div>
+                            </div>
+                            <div style="height: 18rem;" class="row">
+                                    <div class="col-12 pt-3 text-%text-text_item_1%">
+                                        <p>Более 150 брендов</p>
+                                    </div>
+                                    <div class="col-12 text-%text-text_item_2%">
+                                        <p>Более 80 000 SKU в наличии</p>
+                                    </div>
+                                    <div class="col-12 text-">
+                                        <p>Более 7 000 000 артикулов доступно для заказа</p>
+                                    </div>
+                                    <div class="col-12 text-none">
+                                        <p></p>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <a class="text-light" rel="nofollow noopener" href="/Brand">Подробнее...</a>
+                                    </div>                                
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-md my-sm-3" data-razdel="8" data-viewrazdel="2">
+                            <div style="max-width: 255px;" class="mx-auto w-sm-max75">
+                                <div class="row">
+                                    <div class="col text-left">
+                                        <p class="h4">О компании</p>
+                                        <p class="mt-4 mb-2 border-bottom border-success"></p>
+                                    </div>
+                                </div>
+                                <div style="height: 18rem;" class="row">
+                                    <div class="col-12 pt-3 text-%text-text_item_1%">
+                                        <p>Компания STAR TRUCKS существует на рынке запчастей для грузового транспорта более 15 лет. Семейный бизнес начинался с сервиса для грузового транспорта, который существует и по сей день, и развился до сети розничных магазинов и активно растущей партнерской сети.</p>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <a class="text-light" rel="nofollow noopener" href="/About">Подробнее ...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md my-sm-3" data-razdel="9" data-viewrazdel="2">
+                            <div style="max-width: 255px;" class="mx-auto w-sm-max75">
+                                <div class="row">
+                                    <div class="col text-left">
+                                        <p class="h4">СТО</p>
+                                        <p class="mt-4 mb-2 border-bottom border-success"></p>
+                                    </div>
+                                </div>
+                                <div style="height: 18rem;" class="row">
+                                    <div class="col-12 pt-3 text-%text-text_item_1%">
+                                        <p>Диагностика и ремонт рулевого управления</p>
+                                    </div>
+                                    <div class="col-12 text-%text-text_item_2%">
+                                        <p>Экспресс замена масла</p>
+                                    </div>
+                                    <div class="col-12 text-%text-text_item_3%">
+                                        <p>Ремонт ходовой части</p>
+                                    </div>
+                                    <div class="col-12 text-none">
+                                        <p>Ремонт тормозной системы</p>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <a class="text-light" rel="nofollow noopener" href="/Sto">Подробнее...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid py-5 px-0">
+                <div class="row no-gutters text-center pb-5">
+                    <div class="col">
+                        <h1 class="display-4 text-uppercase">Новости</h1>
+                    </div>
+                </div>
+                <div class="row p-5 p-xs-0 mx-5 mx-xs-0">
+
+                    <div class="col-12 col-md-6 col-mdlg-12" data-viewblock="item2List">
+                        <div class="row my-3 align-items-center">
+                            <div class="col-md-6">
+                                <a href="/" rel="nofollow noopener" class="">
+                                    <img src="https://avatars.mds.yandex.net/i?id=c28411d9c5161a54a42bb5ecebcda7fab97e22e1-7716430-images-thumbs&n=13&exp=1" class="img-fluid box_shadow_1" alt="photo">
+                                    <div class="effect_1"></div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 py-xs-3">
+                                <p class="h5"><strong>News 1</strong></p>
+                                <a class="text-dark" rel="nofollow noopener" href="/">
+                                    <div class="row align-items-center mt-4 ">
+                                        <div class="col-auto h4">
+                                            Подробнее
+                                        </div>
+                                        <div class="col-auto pl-0">
+                                            <i class="grey-text ti-arrow-circle-right color_armtek fa-2x"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-mdlg-12" data-viewblock="item2List">
+                        <div class="row my-3 align-items-center">
+                            <div class="col-md-6">
+                                <a href="/" rel="nofollow noopener" class="">
+                                    <img src="https://pic.rutubelist.ru/video/96/e7/96e7e08bdc8f1b17e5b228a12891b051.jpg" class="img-fluid box_shadow_1" alt="photo">
+                                    <div class="effect_1"></div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 py-xs-3">
+                                <p class="h5"><strong>News 2</strong></p>
+                                <a class="text-dark" rel="nofollow noopener" href="/about-company/newsone/motorchik-stekloomyvatelya-stellox--pobeditel-testa-zhurnala-za-rulyom">
+                                    <div class="row align-items-center mt-4 ">
+                                        <div class="col-auto h4">
+                                            Подробнее
+                                        </div>
+                                        <div class="col-auto pl-0">
+                                            <i class="grey-text ti-arrow-circle-right color_armtek fa-2x"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-mdlg-12" data-viewblock="item2List">
+                        <div class="row my-3 align-items-center">
+                            <div class="col-md-6">
+                                <a href="/" rel="nofollow noopener" class="">
+                                    <img src="https://www.tomshw.it/images/images/2018/11/news-6467.jpg" class="img-fluid box_shadow_1" alt="photo">
+                                    <div class="effect_1"></div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 py-xs-3">
+                                <p class="h5"><strong>News 3</strong></p>
+                                <a class="text-dark" rel="nofollow noopener" href="/">
+                                    <div class="row align-items-center mt-4 ">
+                                        <div class="col-auto h4">
+                                            Подробнее
+                                        </div>
+                                        <div class="col-auto pl-0">
+                                            <i class="grey-text ti-arrow-circle-right color_armtek fa-2x"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-mdlg-12" data-viewblock="item2List">
+                        <div class="row my-3 align-items-center">
+                            <div class="col-md-6">
+                                <a href="/" rel="nofollow noopener" class="">
+                                    <img src="https://www.coinit.ir/wp-content/uploads/2018/07/350.jpg" class="img-fluid box_shadow_1" alt="photo">
+                                    <div class="effect_1"></div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 py-xs-3">
+                                <p class="h5"><strong>News 4</strong></p>
+                                <a class="text-dark" rel="nofollow noopener" href="/">
+                                    <div class="row align-items-center mt-4 ">
+                                        <div class="col-auto h4">
+                                            Подробнее
+                                        </div>
+                                        <div class="col-auto pl-0">
+                                            <i class="grey-text ti-arrow-circle-right color_armtek fa-2x"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-mdlg-12" data-viewblock="item2List">
+                        <div class="row my-3 align-items-center">
+                            <div class="col-md-6">
+                                <a href="/" rel="nofollow noopener" class="">
+                                    <img src="https://helpcenter24.ru/wp-content/uploads/2020/09/1209441.jpg" class="img-fluid box_shadow_1" alt="photo">
+                                    <div class="effect_1"></div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 py-xs-3">
+                                <p class="h5"><strong>News 5</strong></p>
+                                <a class="text-dark" rel="nofollow noopener" href="/">
+                                    <div class="row align-items-center mt-4 ">
+                                        <div class="col-auto h4">
+                                            Подробнее
+                                        </div>
+                                        <div class="col-auto pl-0">
+                                            <i class="grey-text ti-arrow-circle-right color_armtek fa-2x"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-mdlg-12" data-viewblock="item2List">
+                        <div class="row my-3 align-items-center">
+                            <div class="col-md-6">
+                                <a href="/" rel="nofollow noopener" class="">
+                                    <img src="https://www.andremontocchio.com/wp-content/uploads/news2.jpg" class="img-fluid box_shadow_1" alt="photo">
+                                    <div class="effect_1"></div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 py-xs-3">
+                                <p class="h5"><strong>News 6</strong></p>
+                                <a class="text-dark" rel="nofollow noopener" href="/">
+                                    <div class="row align-items-center mt-4 ">
+                                        <div class="col-auto h4">
+                                            Подробнее
+                                        </div>
+                                        <div class="col-auto pl-0">
+                                            <i class="grey-text ti-arrow-circle-right color_armtek fa-2x"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container py-md-5">
+                        <div class="row text-center py-5">
+                            <div class="col">
+                                <h1 class="display-4 text-uppercase">Бренды партнеров</h1>
+                            </div>
+                        </div>
+                     <div class="row text-center justify-content-center align-items-center py-">
+                        <div class="col-md-3 col-12 py- my-3 px- text-center">
+                            <img src="https://f.nodacdn.net/441736" alt="bosch" class="img-fluid w_img_barnd">
+                        </div>
+                        <div class="col-md-3 col-12 py- my-3 px- text-center">
+                            <img src="https://f.nodacdn.net/441746" alt="continetal" class="img-fluid w_img_barnd">
+                        </div>
+                        <div class="col-md-3 col-12 py- my-3 px- text-center">
+                            <img src="https://f.nodacdn.net/441738" alt="castrol" class="img-fluid w_img_barnd">
+                        </div>
+                        <div class="col-md-3 col-12 py- my-3 px- text-center">
+                            <img src="https://f.nodacdn.net/441803" alt="motul" class="img-fluid w_img_barnd">
+                        </div>
+                        <div class="col-md-3 col-12 py- my-3 px- text-center">
+                            <img src="https://f.nodacdn.net/441785" alt="konig" class="img-fluid w_img_barnd">
+                        </div>
+                        <div class="col-md-3 col-12 py- my-3 px- text-center">
+                            <img src="https://f.nodacdn.net/441833" alt="shellhelix" class="img-fluid w_img_barnd">
+                        </div>
+                            <div class="col-md-3 col-12 py- my-3 px- text-center">
+                                <img src="https://f.nodacdn.net/441831" alt="schmitz" class="img-fluid w_img_barnd">
+                            </div>
+                            <div class="col-md-3 col-12 py- my-3 px- text-center">
+                                <img src="https://f.nodacdn.net/441817" alt="philips" class="img-fluid w_img_barnd">
+                            </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none text-light">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="/About" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+
+
+    <script>
+        document.getElementById("rega").addEventListener("click", async e => {
+            e.preventDefault();
+            // отправляет запрос и получаем ответ
+            const response = await fetch("api/registration", {
+                method: "POST",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    id: 0,
+                    login: document.getElementById("rlogin").value,
+                    password: document.getElementById("rpassword").value
+                })
+            });
+            if (await response.json() == "Invalid login") {
+                // получаем данные
+                alert("invalid login");
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    @RenderBody()
+</body>
+</html>

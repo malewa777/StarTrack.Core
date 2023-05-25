@@ -1,0 +1,106 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/StatTrack.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbarbrand">
+        <div class="container">
+            <img alt="Brand" class="img-responsive" src="https://f.nodacdn.net/432376" width=" 200" height="80">
+            <buttom class="navbar-toggler" type="buttom" data-toggle="collapse" data-target="navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </buttom>
+            <div class="navbar navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto mb-2">
+                    <li class="nav-item">
+                        <h5><a href="/" class="nav-link aheader">Главная</a></h5>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/About" class="nav-link aheader">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Brand" class="nav-link aheader">Бренды</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Roznica" class="nav-link aheader">Розница</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Sto" class="nav-link aheader">СТО</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Contacts" class="nav-link aheader">Контакты</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid px-0 my-3">
+                <div class="col text-white pb-3 pb-lg-0">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center position-relative">
+                            <div class="col-10 col-md-12 cursor_default py-3 py-lg-5 text-center">
+                                <h1 class="display-4 text-uppercase text-light">Розница</h1>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center position-relative ">
+                            <div class="col-12 text- pt-3 pl-lg-5 text-light">
+                                <p class="h5"></p><p>
+                                    Адреса розничных магазинов представлены ниже. Наши специалисты помогут с подбором и дадут рекомендации по производителям детали.
+                                    Магазины работают 6 дней в неделю. Ждем вас в гости!
+                                <p></p>
+                                <hr>
+                            <p class="h5"></p><p>
+                                Тюмень
+                            <p></p>
+                            <p>625053, г. Тюмень, ул. Чекистов, 28. Тел.: +7 (982) 979 45 77</p>
+                            <p>Понедельник - пятница: c 09.00 до 18.00. Суббота: c 09.00 до 16.00. Воскресенье - выходной</p>
+                            <hr>
+                            <p class="h5"></p><p>
+                                Курган
+                            <p></p>
+                            <p>640027, г. Курган, ул. Омская, 140. Тел.: +7 (919) 564 69 74</p>
+                            <p>Понедельник - пятница: c 09.00 до 18.00. Суббота: c 09.00 до 16.00. Воскресенье - выходной</p>
+                            <p class="h5"><p></p>640023, г. Курган, ул. 258-й км трассы Иртыш. Тел.: +7 (906) 828 88 21</p>
+                            <p>Понедельник - пятница: c 09.00 до 18.00. Суббота: c 09.00 до 16.00. Воскресенье - выходной</p>
+                            <hr>
+                            <p class="h5"></p><p>
+                                Шадринск
+                            <p></p>
+                            <p>641870, г. Шадринск, ул. Курганский тракт, 14Б. Тел.: +7 (912) 570 00 38</p>
+                            <p>Понедельник - пятница: c 09.00 до 18.00. Суббота: c 09.00 до 16.00. Воскресенье - выходной</p>
+                            <p class="h5"></p><p>
+                                СТО / Шиномонтаж. 641870, г. Шадринск, ул. Курганский тракт, 14Б. Тел.: +7 (912) 979 89 99
+                            <p></p>
+                            <p>Понедельник - пятница: c 09.00 до 18.00. Суббота: c 09.00 до 16.00. Воскресенье - выходной</p>
+                            <hr>
+                            <p class="h5"></p><p>
+                                Новосибирск
+                            <p></p>
+                            <p>630052, г. Новосибирск, ул. Малыгина, 11/2. Тел.: +7 (966) 502 02 72</p>
+                            <p>Понедельник - пятница: c 09.00 до 18.00. Суббота: c 10.00 до 16.00. Воскресенье - выходной</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+</html>

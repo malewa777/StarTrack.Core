@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/StatTrack.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+    <div id="userInfo" style="display:none;">
+        <h3>Добро пожаловать</h3>
+        <a href="/Docs"><h4>Перейти к документам</h4></a>
+        <input type="button" value="Выйти" id="logOut" />
+    </div>
+    <div id="loginForm">
+        <h3>Вход для сотрудника</h3>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail" class="form-label">Логин</label>
+                <input type="email" class="form-control" id="login" aria-describedby="emailHelp" autocomplete="off">
+                <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                <input type="password" class="form-control" id="password">
+                    <div class="mb-3 form-check">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="submitLogin">Войти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <script>
+        var tokenKey = "accessToken";
+        // при нажатии на кнопку отправки формы идет запрос к /login для получения токена
+        document.getElementById("submitLogin").addEventListener("click", async e => {
+            e.preventDefault();
+            // отправляет запрос и получаем ответ
+            const response = await fetch("/api/login", {
+                method: "POST",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    id: 0,
+                    login: document.getElementById("login").value,
+                    password: document.getElementById("password").value
+                })
+            });
+            // если запрос прошел нормально
+            if (response.ok === true) {
+                // получаем данные
+                const data = response.json();
+                // изменяем содержимое и видимость блоков на странице
+                document.getElementById("userInfo").style.display = "block";
+                document.getElementById("loginForm").style.display = "none";
+                // сохраняем в хранилище sessionStorage токен доступа
+                sessionStorage.setItem(tokenKey, data.access_token);
+            }
+            else  // если произошла ошибка, получаем код статуса
+                console.log("Status: ", response.status);
+        });
+
+        // условный выход - просто удаляем токен и меняем видимость блоков
+        document.getElementById("logOut").addEventListener("click", async e => {
+            e.preventDefault();
+            document.getElementById("userName").innerText = "";
+            document.getElementById("userInfo").style.display = "none";
+            document.getElementById("loginForm").style.display = "block";
+            document.getElementById("regForm").style.display = "block";
+            sessionStorage.removeItem(tokenKey);
+        });
+    </script>
+</body>
+    </html>

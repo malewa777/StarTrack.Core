@@ -1,0 +1,129 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/StatTrack.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbarbrand">
+        <div class="container">
+            <img alt="Brand" class="img-responsive" src="https://f.nodacdn.net/432376" width=" 200" height="80">
+            <buttom class="navbar-toggler" type="buttom" data-toggle="collapse" data-target="navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </buttom>
+            <div class="navbar navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto mb-2">
+                    <li class="nav-item">
+                        <h5><a href="/" class="nav-link aheader">Главная</a></h5>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/About" class="nav-link aheader">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Brand" class="nav-link aheader">Бренды</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Roznica" class="nav-link aheader">Розница</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Sto" class="nav-link aheader">СТО</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Contacts" class="nav-link aheader">Контакты</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main>
+    <div class="container-fluid px-0 my-3">
+        <div class="col text-white pb-3 pb-lg-0">
+            <div class="container">
+                <div class="row justify-content-center align-items-center position-relative">
+                    <div class="col-10 col-md-12 cursor_default py-3 py-lg-5 text-center">
+                        <h1 class="display-4 text-uppercase text-light">Контакты</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center position-relative ">
+                    <div class="col-12 text- pt-3 pl-lg-5 text-light">
+                        <p class="h5"></p><p>
+                            Контакты розничных магазинов представлены ниже. Наши специалисты помогут с подбором и дадут рекомендации по производителям детали.
+                        <p></p>
+                        <hr>
+                        <p class="h5"></p><p>
+                            Тюмень
+                        <p></p>
+                        <p>625053, г. Тюмень, ул. Чекистов, 28. Тел.: +7 (982) 979 45 77</p>
+                        <p>Руководитель: Воложенин Александр Сергеевич</p>
+                        <p>Tel.: +7 (919) 368 95 02</p>
+                        <p>E-mail: a.volozhenin@star-trucks.ru</p>
+                        <p>Старший менеджер: Глазков Сергей Николаевич</p>
+                        <p>Tel.: +7 (982) 979 45 77</p>
+                        <p>Старший менеджер: Глазков Сергей Николаевич</p>
+                        <p>E-mail: s.glazkov@star-trucks.ru</p>
+                        <hr>
+                        <p class="h5"></p><p>
+                            Курган
+                        <p></p>
+                        <p>640027, г. Курган, ул. Омская, 140.</p>
+                        <p>Руководитель: Бушманов Денис Александрович</p>
+                        <p>Tel.: +7 (919) 564 69 74</p>
+                        <p>E-mail: d.bushmanov@star-trucks.ru</p>
+                        <p>Старший менеджер: Афанасьев Максим Юрьевич</p>
+                        <p>Tel.: +7 (906) 828 88 21</p>
+                        <p>E-mail: m.afanasiev@star-trucks.ru</p>
+                        <hr>
+                        <p class="h5"></p><p>
+                            Шадринск, Центральный офис.
+                        <p></p>
+                        <p>641870, г. Шадринск, ул. Курганский тракт, 14Б.</p>
+                        <p>Руководитель: Лаврентьев Виктор Петрович</p>
+                        <p>Tel.: +7 (912) 979 89 99</p>
+                        <p>Гл. бухгалтер: Кобелева Любовь Николаевна</p>
+                        <p>Tel.: +7 (996) 181 86 60</p>
+                        <p>E-mail: l.kobeleva@star-trucks.ru</p>
+                        <p>Менеджер по закупкам: Луканина Наталья Викторовна</p>
+                        <p>Tel.: +7 (919) 568 63 27</p>
+                        <p>E-mail: n.lukanina@star-trucks.ru</p>
+                        <p>Менеджер по логистики: Бурнашева Светлана Михайловна</p>
+                        <p>Tel.: +7 (982) 800 90 55</p>
+                        <p>E-mail: s.burnasheva@star-trucks.ru</p>
+                        <hr>
+                        <p class="h5"></p><p>
+                            Новосибирск
+                        <p></p>
+                        <p>630052, г. Новосибирск, ул. Малыгина, 11/2.</p>
+                        <p>Руководитель: Греков Владимир Викторович</p>
+                        <p>Tel.: +7 (913) 916 48 58</p>
+                        <p>E-mail: grekov@ngs.ru</p>
+                        <p>Старший менеджер: Греков Егор Владимирович</p>
+                        <p>Tel.: +7 (913) 464 46 47</p>
+                        <p>E-mail: evro_detal@bk.ru</p>
+                        <p>Tel.: +7 (982) 490 00 08</p>
+                    </div>
+                </div>
+               <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;um=constructor%3A756b5fdaae6228a6d9b469765fd3ea07d5c369c0868b5f886233411b3bd9f0f6" frameborder="0" allowfullscreen="true" width="100%" height="400px" style="display: block;"></iframe>
+            </div>
+        </div>
+    </div>
+
+</main>
+</body>
+</html>
