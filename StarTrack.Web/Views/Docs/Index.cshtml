@@ -11,6 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
+
+<script>
+    async function AJAXSubmit(oFormElement) {
+        var resultElement = oFormElement.elements.namedItem("result");
+        const formData = new FormData(oFormElement);
+
+        try {
+            const response = await fetch('/docs/store', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+            console.log(data);
+
+            resultElement.value = data ? "Удачно, C# получил файл (посмотри консоль)"  : "Неудачно, посмотри консоль";
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
+</script>
+
 <body>
     <h1 class="text-center text-light bg-dark">Информация о компании. </h1>
     <br>
@@ -18,9 +40,26 @@
         <br>
     <h1 class="text-center text-light bg-dark">Загрузка файла</h1>
     <center>
-    <form method="post" enctype="multipart/form-data">
-        Выберите файл: <input type="file" name="filename" size="10" /><br /><br />
-        <input type="submit" value="Загрузить" />fd
+
+    <form
+        enctype="multipart/form-data"
+        onsubmit="AJAXSubmit(this);return false;" 
+        method="post"
+    >
+        <dl style="background-color: white">
+            <dt>
+                <label for="file">File</label>
+            </dt>
+            <dd>
+                <input id="file" type="file" name="file" />
+            </dd>
+        </dl>
+
+        <input class="btn btn-primary" type="submit" value="Upload" />
+
+        <div style="margin-top:15px; background-color: white;">
+            <output name="result"></output>
+        </div>
     </form>
     </center>
 </body>

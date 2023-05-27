@@ -46,6 +46,8 @@ string HashingPassword(string pass)
     iterationCount: 100000,
     numBytesRequested: 256 / 8));
 
+    string test = "test";
+
     return hashed;
 }
 app.MapPost("api/registration", (User userdata) =>

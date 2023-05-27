@@ -6,6 +6,7 @@ namespace StarTrack.Web.Controllers
     {
         public IActionResult Index()
         {
+            string test = "test";
             return View();
         }
     }
