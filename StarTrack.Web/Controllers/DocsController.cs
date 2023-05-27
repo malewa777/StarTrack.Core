@@ -6,6 +6,7 @@ namespace StarTrack.Web.Controllers
     {
         // Закомментированный код ниже - пример кода из статьи, ссылку на нее я тебе скину. (Расскомментировать код: выделяешь нужное, дальшее жмешь Ctrl + K -> Ctrl + U
 
+        // // Здесь он определял db. Тебе нужно будет поменять по примеру user repository
         //private readonly ApplicationDbContext context;
 
         //public DocsController(ApplicationDbContext context)
