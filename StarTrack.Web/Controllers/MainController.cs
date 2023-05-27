@@ -2,12 +2,11 @@
 
 namespace StarTrack.Web.Controllers
 {
-    public class ContactsController : Controller
+    public class MainController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
-        
     }
 }

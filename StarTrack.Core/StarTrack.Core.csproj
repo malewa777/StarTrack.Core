@@ -132,8 +132,12 @@
     <Compile Include="Migrations\202304131008041_initialcreate.designer.cs">
       <DependentUpon>202304131008041_initialcreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305271204575_News.cs" />
+    <Compile Include="Migrations\202305271204575_News.designer.cs">
+      <DependentUpon>202305271204575_News.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\File.cs" />
+    <Compile Include="Models\News.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -147,6 +151,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202304131008041_initialcreate.resx">
       <DependentUpon>202304131008041_initialcreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305271204575_News.resx">
+      <DependentUpon>202305271204575_News.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

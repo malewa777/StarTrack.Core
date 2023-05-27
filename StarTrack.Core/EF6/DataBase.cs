@@ -16,5 +16,7 @@ namespace StarTrack.Core.EF6
         }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<News> News { get; set; }
     }
 }
